@@ -11,6 +11,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <title>Vue To Do List</title>
     </head>
     <body>
@@ -20,12 +24,14 @@
                 <img src="img/logo.png" alt="">
             </header>
             <main>
-                <div>
+                <div class="container-task">
                     <ul>
-                        <li v-for="task in myTasks"
-                            :class="(task.done == true) ? 'done' : ''">
-                            {{ task.text }}
-                        </li>
+                        <li v-for="(task, index) in myTasks">
+                            <span :class="(task.done == true) ? 'done' : ''">
+                                {{ task.text }}
+                            </span>
+                            <i class="fa-regular fa-circle-xmark" @click="removeMyTask(index)"></i>
+                    </li>
                     </ul>
                 </div>
             </main>

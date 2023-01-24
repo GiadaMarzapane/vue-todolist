@@ -21,6 +21,8 @@ createApp({
         }
     },
     methods:{
-
+        removeMyTask(i) {
+            this.myTasks.splice(i, 1)
+        }
     }
 }).mount('#app');
