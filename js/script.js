@@ -32,6 +32,7 @@ createApp({
                 done: false
             };
             this.myTasks.push(newObj);
+            this.newTaskString = '';
             console.log(this.myTasks);
         }
     }
