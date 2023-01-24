@@ -1,0 +1,77 @@
+/* ----------- REGOLE RESET ----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------- REGOLE GENERALI ---------- */
+.done{
+text-decoration: line-through;
+}
+/* ---------- REGOLE CSS ---------- */
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header > img{
+    height: 100%;
+}
+
+main{
+    padding-top: 10vh;
+}
+
+main div.input-container {
+    width: 40vw;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main div.input-container input{
+    line-height: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px 10px;
+}
+
+main div.input-container button {
+    line-height: 20px;
+    padding: 5px 10px;
+    margin-left: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+main div.input-container button:hover{
+    background-color: #b3b3b3;
+}
+
+main div.container-task{
+    width: 60vw;
+    margin: 0 auto;
+    background-color: lavender;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main ul {
+    margin-left: 30px;
+}
+
+main ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(130, 0, 163, 0.3);
+    padding: 5px 20px 5px 0;
+}
