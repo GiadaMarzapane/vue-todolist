@@ -17,12 +17,20 @@ createApp({
                     text: 'Comprare regalo Martina',
                     done: false
                 }
-            ]
+            ],
+            newTask: {
+                text: '',
+                done: false
+            }
         }
     },
     methods:{
         removeMyTask(i) {
             this.myTasks.splice(i, 1)
+        },
+
+        addNewTask(){
+            this.myTasks.push(this.newTask)
         }
     }
 }).mount('#app');

@@ -29,6 +29,33 @@ main{
     padding-top: 10vh;
 }
 
+main div.input-container {
+    width: 40vw;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main div.input-container input{
+    line-height: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px 10px;
+}
+
+main div.input-container button {
+    line-height: 20px;
+    padding: 5px 10px;
+    margin-left: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+main div.input-container button:hover{
+    background-color: #b3b3b3;
+}
+
 main div.container-task{
     width: 60vw;
     margin: 0 auto;
