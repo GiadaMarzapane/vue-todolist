@@ -1,6 +1,32 @@
+/* ----------- REGOLE RESET ----------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* ---------- REGOLE GENERALI ---------- */
+.done{
+    text-decoration: line-through;
+}
 
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+header > img{
+    height: 100%;
+}
+
+main{
+    padding-top: 10vh;
+}
+
+main ul {
+    margin-left: 30px;
+}
