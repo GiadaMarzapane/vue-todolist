@@ -31,8 +31,10 @@ createApp({
                 text: this.newTaskString,
                 done: false
             };
-            this.myTasks.push(newObj);
-            this.newTaskString = '';
+            if (this.newTaskString.length > 3) {
+                this.myTasks.push(newObj);
+                this.newTaskString = '';
+            }
             console.log(this.myTasks);
         }
     }

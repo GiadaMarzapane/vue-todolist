@@ -29,7 +29,7 @@
                     <button @click="addNewTask">Aggiungi!</button>
                 </div>
 
-                <div class="container-task">
+                <div class="task-container">
                     <ul>
                         <li v-for="(task, index) in myTasks">
                             <span :class="(task.done == true) ? 'done' : ''" @click="clickOnTask(index)">
